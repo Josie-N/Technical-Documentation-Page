@@ -11,6 +11,8 @@ Objective: Build a CodePen.io app that is functionally similar to this: https://
 
 - [ ] User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "Javascript and Java" should have a corresponding id="Javascript_and_Java").
 
+-------------
+
 - [ ] User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
 
 - [ ] User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
