@@ -1,5 +1,7 @@
 # Responsive Web Design Projects - Build a Technical Documentation Page
 
+Here is my second FreeCodeCamp challenge, part of the **Responsive Web Design Certification** Track. 
+
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/NdrKKL
 --------
 
