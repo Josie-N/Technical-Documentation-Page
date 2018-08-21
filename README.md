@@ -2,7 +2,8 @@
 
 Here is my second FreeCodeCamp challenge, part of the **Responsive Web Design Certification** Track. 
 
-Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/NdrKKL
+###**Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/NdrKKL**
+
 --------
 
 - [x] **User Story 1:** I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
