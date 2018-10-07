@@ -16,13 +16,13 @@ Here is my second FreeCodeCamp challenge, part of the **Responsive Web Design Ce
 
 -------------
 
-- [ ] **User Story 5:** The .main-section elements should contain at least 10 p elements total (not each).
+- [x] **User Story 5:** The .main-section elements should contain at least 10 <p> elements total (not each).
 
-- [ ] **User Story 6:** The .main-section elements should contain at least 5 code elements total (not each).
+- [x] **User Story 6:** The .main-section elements should contain at least 5 <code> elements total (not each).
 
-- [ ] **User Story 7:** The .main-section elements should contain at least 5 li items total (not each).
+- [x] **User Story 7:** The .main-section elements should contain at least 5 <li> items total (not each).
 
-- [ ] **User Story 8:** I can see a nav element with a corresponding id="navbar".
+- [x] **User Story 8:** I can see a <nav> element with a corresponding id="navbar".
 
 -------------
 
