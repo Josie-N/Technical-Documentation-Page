@@ -61,6 +61,7 @@ $line-height-display      : 62px;
   font-size:         $font-size-base; 
   line-height:     $line-height-base;
   color: $color-gunmetal-blue-tint-1;
+  text-decoration: none;
 }
 
 %typography-list-items {
@@ -68,6 +69,8 @@ $line-height-display      : 62px;
   font-size:            $font-size-base; 
   line-height: $line-height-extra-large;
   color:        $color-eerie-black-base;
+  list-style-type:       disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+  list-style-position: inside;
 }
 
 %typography-code-snippets {

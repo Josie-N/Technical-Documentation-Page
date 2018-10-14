@@ -1,10 +1,11 @@
+@charset "UTF-8";
 /* Color Palette ------
 -------------------- */
 /* Layout Colors ------- */
 /* Typography Colors ------- */
 /* Accent Colors ------- */
 @font-face {
-  font-family: 'BentonSans-Regular';
+  font-family: 'Neufile-Grotesk-Medium';
   src: url("assets/fonts/Neufile-Grotesk-Medium.woff") format("truetype");
   font-weight: normal;
   font-style: normal; }
@@ -22,14 +23,59 @@
 /* Font Sizes ------- */
 /* Line Heights ------- */
 /* Type Scale ------- */
+h1 {
+  font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
+  font-size: 41px;
+  line-height: 62px;
+  color: #1C1D1E; }
+
+h2 {
+  font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
+  font-size: 27px;
+  line-height: 41px;
+  color: #1C1D1E; }
+
+h3 {
+  font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
+  font-size: 23px;
+  line-height: 35px;
+  color: #1C1D1E; }
+
+.nav-link {
+  font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #D2D9E9;
+  text-decoration: none; }
+
+ul li {
+  font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
+  font-size: 18px;
+  line-height: 41px;
+  color: #1C1D1E;
+  list-style-type: disc;
+  /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+  list-style-position: inside; }
+
+code {
+  font-family: "Roboto-Mono-Medium", "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 31px;
+  color: #E9EEFC; }
+
 body {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
   font-size: 18px;
   line-height: 27px;
-  color: #1C1D1E; }
+  color: #1C1D1E;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .body-container {
   max-width: 1080px;
   margin: auto; }
+
+ul li {
+  display: list-item; }
 
 /*# sourceMappingURL=style.css.map */

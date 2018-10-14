@@ -7,9 +7,36 @@ body {
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $color-eerie-black-base;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .body-container {
   max-width: 1080px;
   margin: auto;
+}
+
+h1 {
+  @extend %typography-h1-display;
+}
+
+h2 {
+  @extend %typography-h2-main-title; 
+}
+
+h3 {
+  @extend %typography-h3-subtitle;
+}
+
+.nav-link {
+  @extend %typography-menu-link;
+}
+
+ul li {
+  display: list-item;
+  @extend %typography-list-items;
+}
+
+code {
+  @extend %typography-code-snippets;
 }
