@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'BentonSans-Regular';
   src: url("assets/fonts/Neufile-Grotesk-Medium.woff") format("truetype");
@@ -13,9 +14,42 @@
   src: url("assets/fonts/Roboto-Mono-Medium.woff") format("truetype");
   font-weight: normal;
   font-style: normal; }
+/* Font Stacks ------- */
+/* Font Sizes ------- */
+/* Line Heights ------- */
+/* Type Scale ------- */
+h1 {
+  font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
+  font-size: 41px;
+  line-height: 62px;
+  font-weight: bold;
+  font-style: normal; }
+
+h2 {
+  font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
+  font-size: 27px;
+  line-height: 41px; }
+
+h3 {
+  font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
+  font-size: 23px;
+  line-height: 35px; }
+
+p {
+  font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
+  font-size: 18px;
+  line-height: 27px; }
+
+/* Color Palette ------
+-------------------- */
+/* Layout Colors ------- */
+/* Typography Colors ------- */
+/* Accent Colors ------- */
 body {
-  font-family: 'Proxima-Sans-Regular', Arial, sans-serif;
-  font-size: 18px; }
+  font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1C1D1E; }
 
 .body-container {
   max-width: 1080px;

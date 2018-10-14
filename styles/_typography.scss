@@ -1,7 +1,8 @@
+
 /* Font Stacks ------- */
 
 $font-stack-header: 'Neufile-Grotesk-Medium', Times, ‘Times New Roman’, serif; 
-$font-stack-body: 'Proxima-Sans-Regular', Calibri, Trebuchet, sans-serif;
+$font-stack-body: 'Proxima-Sans-Regular', 'Calibri', Trebuchet, sans-serif;
 $font-stack-code: 'Roboto-Mono-Medium', 'Courier New', Courier, monospace;
 
 
@@ -22,7 +23,7 @@ $line-height-medium       : 31px;
 $line-height-base         : 27px;
 $line-height-large        : 35px;
 $line-height-extra-large  : 41px;
-$line-height-display    : 62px;
+$line-height-display      : 62px;
 
 
 /* Type Scale ------- */
@@ -31,7 +32,7 @@ h1 {
   font-family: $font-stack-header;
   font-size: $font-size-display;
   line-height: $line-height-display; 
-  font-weight:  normal;
+  font-weight:  bold;
   font-style: normal;
 }
 
@@ -39,22 +40,16 @@ h2 {
   font-family: $font-stack-header;
   font-size: $font-size-extra-large;
   line-height: $line-height-extra-large; 
-  font-weight:  normal;
-  font-style: normal;
 }
 
 h3 {
   font-family: $font-stack-header;
   font-size: $font-size-large;
   line-height: $line-height-large; 
-  font-weight:  normal;
-  font-style: normal;
 }
 
 p {
   font-family: $font-stack-body;
   font-size: $font-size-base;
-  line-height: $line-height-base;
-  font-weight:  normal;
-  font-style: normal; 
+  line-height: $line-height-base; 
 }

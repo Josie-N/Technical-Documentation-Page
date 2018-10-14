@@ -1,8 +1,12 @@
 @import './styles/typefaces';
+@import './styles/typography';
+@import './styles/color-palette';
 
 body {
-  font-family: 'Proxima-Sans-Regular', Arial, sans-serif;
-  font-size: 18px;
+  font-family: $font-stack-body;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-eerie-black-base;
 }
 
 .body-container {
