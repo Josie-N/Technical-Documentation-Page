@@ -28,28 +28,58 @@ $line-height-display      : 62px;
 
 /* Type Scale ------- */
 
-h1 {
-  font-family: $font-stack-header;
-  font-size: $font-size-display;
-  line-height: $line-height-display; 
-  font-weight:  bold;
-  font-style: normal;
+%typography-h1-display {
+  font-family:      $font-stack-header;
+  font-size:        $font-size-display;
+  line-height:    $line-height-display; 
+  color:       $color-eerie-black-base;
 }
 
-h2 {
-  font-family: $font-stack-header;
-  font-size: $font-size-extra-large;
-  line-height: $line-height-extra-large; 
+%typography-h2-main-title {
+  font-family:       $font-stack-header;
+  font-size:     $font-size-extra-large;
+  line-height: $line-height-extra-large;
+  color:        $color-eerie-black-base;
 }
 
-h3 {
+%typography-h3-subtitle {
   font-family: $font-stack-header;
-  font-size: $font-size-large;
+  font-size:     $font-size-large;
   line-height: $line-height-large; 
+  color:  $color-eerie-black-base;
 }
 
-p {
-  font-family: $font-stack-body;
-  font-size: $font-size-base;
-  line-height: $line-height-base; 
+%typography-paragraph {
+  font-family:    $font-stack-body;
+  font-size:       $font-size-base;
+  line-height:   $line-height-base; 
+  color: $color-eerie-black-tint-1;
+}
+
+%typography-menu-link {
+  font-family:      $font-stack-body;
+  font-size:         $font-size-base; 
+  line-height:     $line-height-base;
+  color: $color-gunmetal-blue-tint-1;
+}
+
+%typography-list-items {
+  font-family:         $font-stack-body;
+  font-size:            $font-size-base; 
+  line-height: $line-height-extra-large;
+  color:        $color-eerie-black-base;
+}
+
+%typography-code-snippets {
+  font-family:         $font-stack-code;
+  font-size:          $font-size-medium; 
+  line-height:      $line-height-medium;
+  color:    $color-gunmetal-blue-tint-2;
+}
+
+%typography-small-text {
+  font-family:         $font-stack-body;
+  font-size:           $font-size-small; 
+  line-height:       $line-height-small;
+  color:   $color-gunmetal-blue-shade-1;
 }
