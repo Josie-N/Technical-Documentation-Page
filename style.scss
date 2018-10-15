@@ -2,18 +2,78 @@
 @import './styles/typefaces';
 @import './styles/typography';
 
+/* Main Layout ---------*/
+
 body {
   font-family: $font-stack-body;
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $color-eerie-black-base;
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
+  
+  display: flex;
 }
 
 .body-container {
-  max-width: 1080px;
+  //max-width: 1080px;
   margin: auto;
+}
+
+.section-container {
+  padding-left: 4px;
+}
+
+.nav-container {
+  min-width: 252px;
+  background: $color-gunmetal-blue-base;
+}
+
+.main-container {
+  max-width: 618px;
+  width: 100%;
+  margin-left: 9%;
+  margin-right: 14.4%;
+}
+
+/* Social Icons ---------*/
+
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 45px;
+
+  &__github, 
+  &__twitter, 
+  &__linkedin {
+    width: 22px;
+    height: 22px;
+    margin-right: 28px;
+  }
+
+  &__linkedin {
+    position: relative;
+    top: 2px;
+  }
+
+  &__twitter {
+    position: relative;
+    top: 4px;
+  }
+}
+
+
+/* Typography Styles ---------*/
+
+.main-section {
+  h2 {
+    margin-top: 51px;
+  }
+
+  p:first-of-type {   // the first paragraph of every section has a larger padding 
+    color: red;
+  }
 }
 
 h1 {
@@ -21,7 +81,7 @@ h1 {
 }
 
 h2 {
-  @extend %typography-h2-main-title; 
+  @extend %typography-h2-main-title;
 }
 
 h3 {
