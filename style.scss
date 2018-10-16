@@ -1,8 +1,14 @@
 @import './styles/color-palette';
+@import './styles/px_to_em';
 @import './styles/typefaces';
 @import './styles/typography';
 
+
 /* Main Layout ---------*/
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: $font-stack-body;
@@ -21,19 +27,29 @@ body {
 }
 
 .section-container {
-  padding-left: 4px;
+  padding-left: rem(4px);
 }
 
 .nav-container {
-  min-width: 252px;
+  //min-width: 252px;
   background: $color-gunmetal-blue-base;
+  display: flex;
+  flex-direction: column;
+  width: 27.6vw;
+}
+
+.nav-inner-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8.6vw;
 }
 
 .main-container {
-  max-width: 618px;
-  width: 100%;
+  //max-width: 618px;
+  max-width: 48vw;
   margin-left: 9%;
-  margin-right: 14.4%;
+  //margin-right: 14.4%;
+
 }
 
 /* Social Icons ---------*/
@@ -42,24 +58,24 @@ body {
 .social-icons {
   display: flex;
   justify-content: flex-end;
-  margin-top: 45px;
+  margin-top: rem(45px);
 
   &__github, 
   &__twitter, 
   &__linkedin {
-    width: 22px;
-    height: 22px;
-    margin-right: 28px;
+    width: rem(22px);
+    height: rem(22px);
+    margin-right: rem(28px);
   }
 
   &__linkedin {
     position: relative;
-    top: 2px;
+    top: rem(2px);
   }
 
   &__twitter {
     position: relative;
-    top: 4px;
+    top: rem(4px);
   }
 }
 
@@ -68,11 +84,15 @@ body {
 
 .main-section {
   h2 {
-    margin-top: 51px;
+    margin-top: rem(51px);
   }
 
   p:first-of-type {   // the first paragraph of every section has a larger padding 
-    color: red;
+    margin-top: rem(17px);
+  }
+
+  p {
+    margin-top: rem(22px);
   }
 }
 

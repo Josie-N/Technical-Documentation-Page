@@ -4,21 +4,6 @@
 /* Layout Colors ------- */
 /* Typography Colors ------- */
 /* Accent Colors ------- */
-@font-face {
-  font-family: 'Neufile-Grotesk-Medium';
-  src: url("assets/fonts/Neufile-Grotesk-Medium.woff") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Proxima-Sans-Regular';
-  src: url("assets/fonts/Proxima-Sans-Regular.woff") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Roboto-Mono-Medium';
-  src: url("assets/fonts/Roboto-Mono-Medium.woff") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
 /* Font Stacks ------- */
 /* Font Sizes ------- */
 /* Line Heights ------- */
@@ -33,7 +18,8 @@ h2 {
   font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
   font-size: 27px;
   line-height: 41px;
-  color: #1C1D1E; }
+  color: #1C1D1E;
+  letter-spacing: 0.2px; }
 
 h3 {
   font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
@@ -63,17 +49,123 @@ code {
   line-height: 31px;
   color: #E9EEFC; }
 
+@font-face {
+  font-family: 'Neufile-Grotesk-Medium';
+  src: url("assets/fonts/Neufile-Grotesk-Medium.woff") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Proxima-Sans-Regular';
+  src: url("assets/fonts/Proxima-Sans-Regular.woff") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto-Mono-Medium';
+  src: url("assets/fonts/Roboto-Mono-Medium.woff") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* Font Stacks ------- */
+/* Font Sizes ------- */
+/* Line Heights ------- */
+/* Type Scale ------- */
+h1 {
+  font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
+  font-size: 41px;
+  line-height: 62px;
+  color: #1C1D1E; }
+
+h2 {
+  font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
+  font-size: 27px;
+  line-height: 41px;
+  color: #1C1D1E;
+  letter-spacing: 0.2px; }
+
+h3 {
+  font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
+  font-size: 23px;
+  line-height: 35px;
+  color: #1C1D1E; }
+
+.nav-link {
+  font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #D2D9E9;
+  text-decoration: none; }
+
+ul li {
+  font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
+  font-size: 18px;
+  line-height: 41px;
+  color: #1C1D1E;
+  list-style-type: disc;
+  /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+  list-style-position: inside; }
+
+code {
+  font-family: "Roboto-Mono-Medium", "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 31px;
+  color: #E9EEFC; }
+
+/* Main Layout ---------*/
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
   font-size: 18px;
   line-height: 27px;
   color: #1C1D1E;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  display: flex; }
 
 .body-container {
-  max-width: 1080px;
   margin: auto; }
+
+.section-container {
+  padding-left: 0.222rem; }
+
+.nav-container {
+  background: #2F3546;
+  display: flex;
+  flex-direction: column;
+  width: 27.6vw; }
+
+.nav-inner-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8.6vw; }
+
+.main-container {
+  max-width: 48vw;
+  margin-left: 9%; }
+
+/* Social Icons ---------*/
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.5rem; }
+  .social-icons__github, .social-icons__twitter, .social-icons__linkedin {
+    width: 1.222rem;
+    height: 1.222rem;
+    margin-right: 1.556rem; }
+  .social-icons__linkedin {
+    position: relative;
+    top: 0.111rem; }
+  .social-icons__twitter {
+    position: relative;
+    top: 0.222rem; }
+
+/* Typography Styles ---------*/
+.main-section h2 {
+  margin-top: 2.833rem; }
+.main-section p:first-of-type {
+  margin-top: 0.944rem; }
+.main-section p {
+  margin-top: 1.222rem; }
 
 ul li {
   display: list-item; }

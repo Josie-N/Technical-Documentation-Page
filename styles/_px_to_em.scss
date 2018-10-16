@@ -1,0 +1,73 @@
+//
+// Base font size is 18px
+// Conversion mixin from px to em
+// usage:
+// margin: em(20);
+// OR
+// margin: em(20px);
+//
+
+@import '../styles/typography.scss';
+
+$browser-context: $font-size-base;
+
+@function em($pixels, $context: $browser-context) {
+  @return converter($pixels, 'em', $context);
+}
+
+@function rem($pixels, $context: $browser-context) {
+  @return converter($pixels, 'rem', $context);
+}
+
+@function converter($pixels, $unit, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  $ret: null;
+  @if ($unit == 'em') {
+    $ret: $pixels / $context * 1em;
+  } @else if ($unit == 'rem') {
+    $ret: $pixels / $context * 1rem;
+  }
+
+  @return decimal-round($ret);
+}
+
+// Helper
+@function decimal-round ($number, $digits: 3, $mode: round) {
+  $n: 1;
+  // $number must be a number
+  @if type-of($number) != number {
+    @warn '#{ $number } is not a number.';
+    @return $number;
+  }
+  // $digits must be a unitless number
+  @if type-of($digits) != number {
+    @warn '#{ $digits } is not a number.';
+    @return $number;
+  } @else if not unitless($digits) {
+    @warn '#{ $digits } has a unit.';
+    @return $number;
+  }
+  @if $digits > 0 {
+    @for $i from 1 through $digits {
+      $n: $n * 10;
+    }
+  }
+  @if $mode == round {
+    @return round($number * $n) / $n;
+  } @else if $mode == ceil {
+    @return ceil($number * $n) / $n;
+  } @else if $mode == floor {
+    @return floor($number * $n) / $n;
+  } @else {
+    @warn '#{ $mode } is undefined keyword.';
+    @return $number;
+  }
+}
+
