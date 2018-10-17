@@ -123,6 +123,18 @@ h3 {
   line-height: 31px;
   color: #E9EEFC; }
 
+/*
+When adding it to classes and elements in style.scss, use: 
+
+  @include breakpoint(md) { 
+  }
+
+  @include breakpoint(lg) { 
+  }
+
+  Article: https://medium.com/developing-with-sass/creating-a-dead-simple-sass-mixin-to-handle-responsive-breakpoints-889927b37740
+
+*/
 /* Main Layout ---------*/
 * {
   box-sizing: border-box; }
