@@ -27,14 +27,21 @@ h3 {
   line-height: 35px;
   color: #1C1D1E; }
 
+.nav-container h2 {
+  font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
+  font-size: 23px;
+  line-height: 31px;
+  color: #E9EEFC; }
+
 .nav-link {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
   font-size: 18px;
   line-height: 27px;
   color: #D2D9E9;
-  text-decoration: none; }
+  text-decoration: none;
+  letter-spacing: 0.3px; }
 
-li {
+.main-section li {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
   font-size: 18px;
   line-height: 41px;
@@ -43,7 +50,7 @@ li {
   /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
   list-style-position: inside; }
 
-code {
+.main-section code {
   font-family: "Roboto-Mono-Medium", "Courier New", Courier, monospace;
   font-size: 14px;
   line-height: 31px;
@@ -87,14 +94,21 @@ h3 {
   line-height: 35px;
   color: #1C1D1E; }
 
+.nav-container h2 {
+  font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
+  font-size: 23px;
+  line-height: 31px;
+  color: #E9EEFC; }
+
 .nav-link {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
   font-size: 18px;
   line-height: 27px;
   color: #D2D9E9;
-  text-decoration: none; }
+  text-decoration: none;
+  letter-spacing: 0.3px; }
 
-li {
+.main-section li {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
   font-size: 18px;
   line-height: 41px;
@@ -103,7 +117,7 @@ li {
   /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
   list-style-position: inside; }
 
-code {
+.main-section code {
   font-family: "Roboto-Mono-Medium", "Courier New", Courier, monospace;
   font-size: 14px;
   line-height: 31px;
@@ -129,27 +143,46 @@ body {
   padding-left: 0.222rem; }
 
 .nav-container {
+  width: 27.6vw;
   background: #2F3546;
   display: flex;
-  flex-direction: column;
-  width: 27.6vw; }
+  justify-content: flex-end; }
 
 .nav-inner-container {
   display: flex;
   flex-direction: column;
   padding-left: 8.6vw;
+  padding-right: 2.556rem;
   position: fixed; }
+  .nav-inner-container header {
+    max-width: 68%;
+    margin-top: 2.667rem; }
+  .nav-inner-container .menu-link-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.444rem; }
+    .nav-inner-container .menu-link-container a {
+      margin-bottom: 1.278rem; }
 
 .main-container {
   max-width: 48vw;
   margin-left: 9%;
+  margin-top: 2.5rem;
   margin-bottom: 11.333rem; }
+  .main-container .final-section-marker {
+    width: 0.778rem;
+    height: 0.778rem;
+    background: #D46677;
+    margin-top: 0.444rem;
+    border-radius: 0.056rem; }
 
 /* Social Icons ---------*/
 .social-icons {
   display: flex;
   justify-content: flex-end;
-  margin-top: 2.5rem; }
+  margin-top: 2.222rem;
+  position: relative;
+  right: 3.778rem; }
   .social-icons__github, .social-icons__twitter, .social-icons__linkedin {
     width: 1.222rem;
     height: 1.222rem;
@@ -162,14 +195,27 @@ body {
     top: 0.222rem; }
 
 /* Typography Styles ---------*/
+.nav-container .logo-decorative-square {
+  width: 0.444rem;
+  height: 0.444rem;
+  background: #4EA699;
+  float: right;
+  transform: translateY(-5px); }
+
 .main-section h2 {
-  margin-top: 2.833rem; }
+  margin-top: 3.389rem; }
 .main-section p:first-of-type, .main-section ul {
   margin-top: 0.944rem; }
 .main-section p {
   margin-top: 1.222rem; }
-.main-section code {
-  background-color: red; }
+.main-section .highlight-text {
+  background: #F3F6FD;
+  color: #2B2C31;
+  line-height: 18px;
+  padding: 0.278rem 0.389rem;
+  margin: 0 3px;
+  border-radius: 3px;
+  border: 1px solid #E9EEFC; }
 .main-section pre {
   padding: 1.111rem 2.389rem 1.111rem 2.222rem;
   background: #292E3D;
@@ -181,9 +227,11 @@ body {
     margin-top: 1.167rem; }
 
 h3 {
-  margin-top: 2.056rem; }
+  margin-top: 2.611rem; }
 
-li {
+.main-section ul {
+  white-space: nowrap; }
+.main-section li {
   display: list-item; }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,7 +22,6 @@ body {
 }
 
 .body-container {
-  //max-width: 1080px;
   margin: auto;
 }
 
@@ -32,24 +31,50 @@ body {
 
 .nav-container {
   //min-width: 252px;
+  width: 27.6vw;
   background: $color-gunmetal-blue-base;
   display: flex;
-  flex-direction: column;
-  width: 27.6vw;
+  justify-content: flex-end;
 }
 
 .nav-inner-container {
   display: flex;
   flex-direction: column;
   padding-left: 8.6vw;
+  padding-right: rem(46px);
+  position: fixed;
+
+  header {
+    max-width: 68%;
+    margin-top: rem(48px);
+  }
+
+  .menu-link-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(98px);
+
+    a {
+      margin-bottom: rem(23px);
+    }
+  }
+
 }
 
 .main-container {
   //max-width: 618px;
   max-width: 48vw;
   margin-left: 9%;
-  //margin-right: 14.4%;
+  margin-top: rem(45px);
+  margin-bottom: rem(204px);
 
+  .final-section-marker {
+    width: rem(14px);
+    height: rem(14px);
+    background: $color-carmine-red;
+    margin-top: rem(8px);
+    border-radius: rem(1px);
+  }
 }
 
 /* Social Icons ---------*/
@@ -58,7 +83,9 @@ body {
 .social-icons {
   display: flex;
   justify-content: flex-end;
-  margin-top: rem(45px);
+  margin-top: rem(40px);
+  position: relative;
+  right: rem(68px);
 
   &__github, 
   &__twitter, 
@@ -82,17 +109,54 @@ body {
 
 /* Typography Styles ---------*/
 
-.main-section {
-  h2 {
-    margin-top: rem(51px);
+.nav-container {
+  .logo-decorative-square {
+    width: rem(8px);
+    height: rem(8px);
+    background: $color-green-pine-base;
+    float: right;
+    transform: translateY(-5px);
   }
 
-  p:first-of-type {   // the first paragraph of every section has a larger padding 
+  h2 {
+    @extend %typography-h3-dark-theme;
+  }
+}
+
+.main-section {
+  h2 {
+    margin-top: rem(61px);
+  }
+
+  p:first-of-type, ul {   // the first paragraph of every section has a larger padding 
     margin-top: rem(17px);
   }
 
   p {
     margin-top: rem(22px);
+  }
+
+  .highlight-text {
+    background: $color-gunmetal-blue-tint-3;
+    color: $color-eerie-black-tint-1;
+    line-height: $line-height-small;  // initial code tag line-height was larger and was creating a gap into the paragraph  
+    padding: rem(5px) rem(7px);
+    margin: 0 3px;
+    border-radius: 3px;
+    border: 1px solid $color-gunmetal-blue-tint-2;
+  }
+
+  pre {
+    padding: rem(20px) rem(43px) rem(20px) rem(40px);
+    background: $color-gunmetal-blue-shade-1;
+    border-radius: rem(8px);
+    overflow: hidden;
+    margin-top: 26px;
+    margin-bottom: 40px;
+
+    .code-snippet-margin {
+      margin-top: rem(21px);
+    }
   }
 }
 
@@ -106,17 +170,25 @@ h2 {
 
 h3 {
   @extend %typography-h3-subtitle;
+  margin-top: rem(47px);
 }
 
 .nav-link {
   @extend %typography-menu-link;
 }
 
-ul li {
-  display: list-item;
-  @extend %typography-list-items;
-}
 
-code {
-  @extend %typography-code-snippets;
+.main-section {
+  ul {
+    white-space: nowrap;
+  }
+
+  li {
+    display: list-item;
+    @extend %typography-list-items;
+  }
+
+  code {
+    @extend %typography-code-snippets;
+  }
 }

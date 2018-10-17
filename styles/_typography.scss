@@ -50,6 +50,14 @@ $line-height-display      : 62px;
   color:  $color-eerie-black-base;
 }
 
+%typography-h3-dark-theme {
+  font-family:     $font-stack-header;
+  font-size:         $font-size-large;
+  line-height:    $line-height-medium;
+  color:  $color-gunmetal-blue-tint-2;
+}
+
+
 %typography-paragraph {
   font-family:    $font-stack-body;
   font-size:       $font-size-base;
@@ -63,6 +71,7 @@ $line-height-display      : 62px;
   line-height:     $line-height-base;
   color: $color-gunmetal-blue-tint-1;
   text-decoration: none;
+  letter-spacing: 0.3px;
 }
 
 %typography-list-items {
