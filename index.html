@@ -8,14 +8,16 @@
 	</head>
 		<body class="body-container">
 			<nav class="nav-container" id="navbar">
-				<header><h2>Sass Basics</h2></header>
-				<a href="#introduction" class="nav-link">Introduction</a>
-				<a href="#features" class="nav-link">Features</a>
-				<a href="#getting_started" class="nav-link">Preprocessing</a>
-				<a href="#variables" class="nav-link">Variables</a>
-				<a href="#nesting" class="nav-link">Nesting</a>
-				<a href="#partials" class="nav-link">Partials</a>
-				<a href="#mixins" class="nav-link">Mixins</a>
+				<div class="nav-inner-container">
+					<header><h2>Sass Basics</h2></header>
+					<a href="#introduction" class="nav-link">Introduction</a>
+					<a href="#features" class="nav-link">Features</a>
+					<a href="#getting_started" class="nav-link">Preprocessing</a>
+					<a href="#variables" class="nav-link">Variables</a>
+					<a href="#nesting" class="nav-link">Nesting</a>
+					<a href="#partials" class="nav-link">Partials</a>
+					<a href="#mixins" class="nav-link">Mixins</a>
+				</div>
 				</nav>				
 			<main class="main-container" id="main-doc">
 				<div class="social-icons">
@@ -58,69 +60,46 @@
 					<section class="main-section" id="getting_started">
 						<header><h3>Preprocessing</h3></header>
 						<p>Sass can be used in three ways: as a command-line tool, as a standalone Ruby module, and as a plugin for any Rack-enabled framework, including Ruby on Rails and Merb. The first step for all of these is to install the Sass gem:</p>
-						<pre>
-							<code>
-			gem install sass
-							</code>
-						</pre>
+						<pre><code>gem install sass</code></pre>
 						<p>If you're using Windows, you may need to install Ruby first.</p>	
 						<p>You can also tell Sass to watch the file and update the CSS every time the Sass file changes:</p>
-						<pre>
-							<code>
-			sass --watch input.scss:output.css
-							</code>
-						</pre>
+						<pre><code>sass --watch input.scss:output.css</code></pre>
 					</section>
 
 					<section class="main-section" id="variables">
 						<header><h3>Variables</h3></header>
-						<p>Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the $ symbol to make something a variable. Here's an example:</p>
-						<pre>
-							<code>
-			$font-stack:    Helvetica, sans-serif;
-			$primary-color: #333;
-
-			body {
-			font: 100% $font-stack;
-			color: $primary-color;
-			}
-							</code>
-						</pre>
+						<p>Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the $ symbol to make something a variable. Here's an example:</p>						
+						<pre><code>$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+<div class="code-snippet-margin">body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}</div></code></pre>
 						<p>When the Sass is processed, it takes the variables we define for the $font-stack and $primary-color and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.</p>
-						<pre>
-							<code>
-			body {
-			font: 100% Helvetica, sans-serif;
-			color: #333;
-			}
-							</code>
-						</pre>
+<pre><code>body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}</code></pre>
 					</section>
 
 					<section class="main-section" id="nesting">
 						<header><h3>Nesting</h3></header>
 						<p>When writing HTML you've probably noticed that it has a clear nested and visual hierarchy. CSS, on the other hand, doesn't.</p>
 						<p>Sass will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. Be aware that overly nested rules will result in over-qualified CSS that could prove hard to maintain and is generally considered bad practice.</p>
-						<p>With that in mind, here's an example of some typical styles for a site's navigation:					</p>
-						<pre>
-							<code>
-			nav {
-			ul {
-				margin: 0;
-				padding: 0;
-				list-style: none;
-			}
-
-			li { display: inline-block; }
-
-			a {
-				display: block;
-				padding: 6px 12px;
-				text-decoration: none;
-			}
-			}
-							</code>
-						</pre>
+						<p>With that in mind, here's an example of some typical styles for a site's navigation:</p>
+<pre><code>nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+<div class="code-snippet-margin">  li { 
+    display: inline-block; 
+  }</div><div class="code-snippet-margin">  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }</div>}</code></pre>
 						<p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
 					</section>
 
@@ -133,17 +112,14 @@
 					<section class="main-section" id="mixins">
 						<head><h3>Mixins</h3></head>
 						<p>Some things in CSS are a bit tedious to write, especially with CSS3 and the many vendor prefixes that exist. A mixin lets you make groups of CSS declarations that you want to reuse throughout your site.</p>
-						<pre>
-							<code>
-			@mixin transform($property) {
-			-webkit-transform: $property;
-					-ms-transform: $property;
-							transform: $property;
-			}
-
-			.box { @include transform(rotate(30deg)); }
-							</code>
-						</pre>
+<pre><code>@mixin transform($property) {
+  -webkit-transform: $property;
+      -ms-transform: $property;
+          transform: $property;
+}
+<div class="code-snippet-margin">.box { 
+  @include transform(rotate(30deg)); 
+}</div></code></pre>
 						<p>To create a mixin you use the @mixin directive and give it a name. We've named our mixin  transform. We're also using the variable $property inside the parentheses so we can pass in a transform of whatever we want.</p>
 					</section>
 				</div>

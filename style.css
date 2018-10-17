@@ -34,7 +34,7 @@ h3 {
   color: #D2D9E9;
   text-decoration: none; }
 
-ul li {
+li {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
   font-size: 18px;
   line-height: 41px;
@@ -94,7 +94,7 @@ h3 {
   color: #D2D9E9;
   text-decoration: none; }
 
-ul li {
+li {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
   font-size: 18px;
   line-height: 41px;
@@ -137,11 +137,13 @@ body {
 .nav-inner-container {
   display: flex;
   flex-direction: column;
-  padding-left: 8.6vw; }
+  padding-left: 8.6vw;
+  position: fixed; }
 
 .main-container {
   max-width: 48vw;
-  margin-left: 9%; }
+  margin-left: 9%;
+  margin-bottom: 11.333rem; }
 
 /* Social Icons ---------*/
 .social-icons {
@@ -162,12 +164,26 @@ body {
 /* Typography Styles ---------*/
 .main-section h2 {
   margin-top: 2.833rem; }
-.main-section p:first-of-type {
+.main-section p:first-of-type, .main-section ul {
   margin-top: 0.944rem; }
 .main-section p {
   margin-top: 1.222rem; }
+.main-section code {
+  background-color: red; }
+.main-section pre {
+  padding: 1.111rem 2.389rem 1.111rem 2.222rem;
+  background: #292E3D;
+  border-radius: 0.444rem;
+  overflow: hidden;
+  margin-top: 26px;
+  margin-bottom: 40px; }
+  .main-section pre .code-snippet-margin {
+    margin-top: 1.167rem; }
 
-ul li {
+h3 {
+  margin-top: 2.056rem; }
+
+li {
   display: list-item; }
 
 /*# sourceMappingURL=style.css.map */
