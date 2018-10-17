@@ -1,0 +1,98 @@
+
+/* Font Stacks ------- */
+
+$font-stack-header: 'Neufile-Grotesk-Medium', Times, ‘Times New Roman’, serif; 
+$font-stack-body: 'Proxima-Sans-Regular', 'Calibri', Trebuchet, sans-serif;
+$font-stack-code: 'Roboto-Mono-Medium', 'Courier New', Courier, monospace;
+
+
+/* Font Sizes ------- */
+
+$font-size-small        : 12px;
+$font-size-medium       : 14px;
+$font-size-base         : 18px;
+$font-size-large        : 23px;
+$font-size-extra-large  : 27px;
+$font-size-display      : 41px;
+
+
+/* Line Heights ------- */
+
+$line-height-small        : 18px;
+$line-height-base         : 27px;
+$line-height-medium       : 31px;
+$line-height-large        : 35px;
+$line-height-extra-large  : 41px;
+$line-height-display      : 62px;
+
+
+/* Type Scale ------- */
+
+%typography-h1-display {
+  font-family:      $font-stack-header;
+  font-size:        $font-size-display;
+  line-height:    $line-height-display; 
+  color:       $color-eerie-black-base;
+}
+
+%typography-h2-main-title {
+  font-family:       $font-stack-header;
+  font-size:     $font-size-extra-large;
+  line-height: $line-height-extra-large;
+  color:        $color-eerie-black-base;
+  letter-spacing: 0.2px;
+}
+
+%typography-h3-subtitle {
+  font-family: $font-stack-header;
+  font-size:     $font-size-large;
+  line-height: $line-height-large; 
+  color:  $color-eerie-black-base;
+}
+
+%typography-h3-dark-theme {
+  font-family:     $font-stack-header;
+  font-size:         $font-size-large;
+  line-height:    $line-height-medium;
+  color:  $color-gunmetal-blue-tint-2;
+}
+
+
+%typography-paragraph {
+  font-family:    $font-stack-body;
+  font-size:       $font-size-base;
+  line-height:   $line-height-base; 
+  color: $color-eerie-black-tint-1;
+}
+
+%typography-menu-link {
+  font-family:      $font-stack-body;
+  font-size:         $font-size-base; 
+  line-height:     $line-height-base;
+  color: $color-gunmetal-blue-tint-1;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+
+%typography-list-items {
+  font-family:         $font-stack-body;
+  font-size:            $font-size-base; 
+  line-height: $line-height-extra-large;
+  color:        $color-eerie-black-base;
+  list-style-type:       disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+  list-style-position: inside;
+}
+
+%typography-code-snippets {
+  font-family:         $font-stack-code;
+  font-size:          $font-size-medium; 
+  line-height:      $line-height-medium;
+  color:    $color-gunmetal-blue-tint-2;
+}
+
+%typography-small-text {
+  font-family:         $font-stack-body;
+  font-size:           $font-size-small; 
+  line-height:       $line-height-small;
+  color:   $color-gunmetal-blue-shade-1;
+}

@@ -1,0 +1,195 @@
+@import './styles/color-palette';
+@import './styles/px_to_em';
+@import './styles/typefaces';
+@import './styles/typography';
+@import './styles/breakpoint-mixins';
+
+
+/* Main Layout ---------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack-body;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-eerie-black-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  display: flex;
+}
+
+.body-container {
+  margin: auto;
+}
+
+.section-container {
+  padding-left: rem(4px);
+}
+
+.nav-container {
+  //min-width: 252px;
+  width: 27.6vw;
+  background: $color-gunmetal-blue-base;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-inner-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8.6vw;
+  padding-right: rem(46px);
+  position: fixed;
+
+  header {
+    max-width: 68%;
+    margin-top: rem(48px);
+  }
+
+  .menu-link-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(98px);
+
+    a {
+      margin-bottom: rem(23px);
+    }
+  }
+
+}
+
+.main-container {
+  //max-width: 618px;
+  max-width: 48vw;
+  margin-left: 9%;
+  margin-top: rem(45px);
+  margin-bottom: rem(204px);
+
+  .final-section-marker {
+    width: rem(14px);
+    height: rem(14px);
+    background: $color-carmine-red;
+    margin-top: rem(8px);
+    border-radius: rem(1px);
+  }
+}
+
+/* Social Icons ---------*/
+
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: rem(40px);
+  position: relative;
+  right: rem(68px);
+
+  &__github, 
+  &__twitter, 
+  &__linkedin {
+    width: rem(22px);
+    height: rem(22px);
+    margin-right: rem(28px);
+  }
+
+  &__linkedin {
+    position: relative;
+    top: rem(2px);
+  }
+
+  &__twitter {
+    position: relative;
+    top: rem(4px);
+  }
+}
+
+
+/* Typography Styles ---------*/
+
+.nav-container {
+  .logo-decorative-square {
+    width: rem(8px);
+    height: rem(8px);
+    background: $color-green-pine-base;
+    float: right;
+    transform: translateY(-5px);
+  }
+
+  h2 {
+    @extend %typography-h3-dark-theme;
+  }
+}
+
+.main-section {
+  h2 {
+    margin-top: rem(61px);
+  }
+
+  p:first-of-type, ul {   // the first paragraph of every section has a larger padding 
+    margin-top: rem(17px);
+  }
+
+  p {
+    margin-top: rem(22px);
+  }
+
+  .highlight-text {
+    background: $color-gunmetal-blue-tint-3;
+    color: $color-eerie-black-tint-1;
+    line-height: $line-height-small;  // initial code tag line-height was larger and was creating a gap into the paragraph  
+    padding: rem(5px) rem(7px);
+    margin: 0 3px;
+    border-radius: 3px;
+    border: 1px solid $color-gunmetal-blue-tint-2;
+  }
+
+  pre {
+    padding: rem(20px) rem(43px) rem(20px) rem(40px);
+    background: $color-gunmetal-blue-shade-1;
+    border-radius: rem(8px);
+    overflow: hidden;
+    margin-top: 26px;
+    margin-bottom: 40px;
+
+    .code-snippet-margin {
+      margin-top: rem(21px);
+    }
+  }
+}
+
+h1 {
+  @extend %typography-h1-display;
+}
+
+h2 {
+  @extend %typography-h2-main-title;
+}
+
+h3 {
+  @extend %typography-h3-subtitle;
+  margin-top: rem(47px);
+}
+
+.nav-link {
+  @extend %typography-menu-link;
+}
+
+
+.main-section {
+  ul {
+    white-space: nowrap;
+  }
+
+  li {
+    display: list-item;
+    @extend %typography-list-items;
+  }
+
+  code {
+    @extend %typography-code-snippets;
+  }
+}

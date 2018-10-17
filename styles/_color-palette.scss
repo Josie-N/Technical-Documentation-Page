@@ -1,0 +1,36 @@
+
+/* Color Palette ------
+-------------------- */
+
+
+/* Layout Colors ------- */
+
+//
+// base = 'color_name'-base
+//
+// shade  =  darked version of the base color
+// tint  =  lighter version of the base color 
+//
+// shade-1  =  base color is one level darker
+// shade-2  =  base color is two levels darker
+//
+
+$color-gunmetal-blue-shade-1: #292E3D;
+$color-gunmetal-blue-base:    #2F3546;
+$color-gunmetal-blue-tint-1:  #D2D9E9;
+$color-gunmetal-blue-tint-2:  #E9EEFC;
+$color-gunmetal-blue-tint-3:  #F3F6FD;
+$color-gunmetal-blue-tint-extra:  #545967;
+
+
+/* Typography Colors ------- */
+
+$color-eerie-black-base:      #1C1D1E;
+$color-eerie-black-tint-1:    #2B2C31;
+
+/* Accent Colors ------- */
+
+$color-green-pine-base:       #4EA699;
+$color-green-pine-shade-1:    #1D7874;
+$color-carmine-red:           #D46677;
+$color-sunglow-yellow:        #FFBC42;
