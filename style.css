@@ -56,6 +56,12 @@ h3 {
   line-height: 31px;
   color: #E9EEFC; }
 
+footer small {
+  font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
+  font-size: 12.2px;
+  line-height: 18px;
+  color: #1C1D1E; }
+
 @font-face {
   font-family: 'Neufile-Grotesk-Medium';
   src: url("assets/fonts/Neufile-Grotesk-Medium.woff") format("truetype");
@@ -123,6 +129,12 @@ h3 {
   line-height: 31px;
   color: #E9EEFC; }
 
+footer small {
+  font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
+  font-size: 12.2px;
+  line-height: 18px;
+  color: #1C1D1E; }
+
 /*
 When adding it to classes and elements in style.scss, use: 
 
@@ -135,9 +147,12 @@ When adding it to classes and elements in style.scss, use:
   Article: https://medium.com/developing-with-sass/creating-a-dead-simple-sass-mixin-to-handle-responsive-breakpoints-889927b37740
 
 */
-/* Main Layout ---------*/
+/* Global Styles ---------*/
 * {
   box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
 
 body {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
@@ -151,6 +166,7 @@ body {
 .body-container {
   margin: auto; }
 
+/* Main Layout ---------*/
 .section-container {
   padding-left: 0.222rem; }
 
@@ -180,13 +196,22 @@ body {
   max-width: 51vw;
   margin-left: 9%;
   margin-top: 2.5rem;
-  margin-bottom: 11.333rem; }
+  margin-bottom: 2.167rem; }
   .main-container .final-section-marker {
-    width: 0.778rem;
-    height: 0.778rem;
-    background: #D46677;
-    margin-top: 0.444rem;
+    width: 0.611rem;
+    height: 0.611rem;
+    background: #4EA699;
+    opacity: 0.8;
+    margin-top: 0.333rem;
     border-radius: 0.056rem; }
+  .main-container footer {
+    min-height: 2.667rem;
+    margin-top: 9.111rem;
+    padding: 0.5rem 0.833rem;
+    background: rgba(243, 246, 253, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 /* Social Icons ---------*/
 .social-icons {
@@ -239,11 +264,24 @@ body {
     margin-top: 1.167rem; }
 
 h3 {
-  margin-top: 2.611rem; }
+  margin-top: 2.056rem; }
+
+h3::before {
+  content: url(assets/icons/decorative-line-before-h3-element.svg);
+  display: inline-block;
+  text-indent: -2.444rem;
+  transform: translateY(-6px); }
 
 .main-section ul {
   white-space: nowrap; }
 .main-section li {
   display: list-item; }
+
+footer small {
+  margin-top: 0.333rem;
+  line-height: 21px; }
+footer a {
+  display: inline-block;
+  color: #1b8072; }
 
 /*# sourceMappingURL=style.css.map */

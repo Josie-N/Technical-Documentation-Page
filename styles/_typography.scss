@@ -8,7 +8,7 @@ $font-stack-code: 'Roboto-Mono-Medium', 'Courier New', Courier, monospace;
 
 /* Font Sizes ------- */
 
-$font-size-small        : 12px;
+$font-size-small        : 12.2px;
 $font-size-medium       : 14px;
 $font-size-minor        : 16px;
 $font-size-base         : 18px;
@@ -73,7 +73,6 @@ $line-height-display      : 62px;
   line-height:     $line-height-base;
   color: $color-gunmetal-blue-tint-1;
   text-decoration: none;
-  //letter-spacing: 0.3px;
 }
 
 %typography-list-items {
@@ -96,5 +95,6 @@ $line-height-display      : 62px;
   font-family:         $font-stack-body;
   font-size:           $font-size-small; 
   line-height:       $line-height-small;
-  color:   $color-gunmetal-blue-shade-1;
+  color:        $color-eerie-black-base;
+  ;
 }
