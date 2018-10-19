@@ -5,10 +5,14 @@
 @import './styles/breakpoint-mixins';
 
 
-/* Main Layout ---------*/
+/* Global Styles ---------*/
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -26,13 +30,15 @@ body {
   margin: auto;
 }
 
+/* Main Layout ---------*/
+
 .section-container {
   padding-left: rem(4px);
 }
 
 .nav-container {
   //min-width: 252px;
-  width: 27.6vw;
+  width: 24.9vw;
   background: $color-gunmetal-blue-base;
   display: flex;
   justify-content: flex-end;
@@ -42,41 +48,55 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 8.6vw;
-  padding-right: rem(46px);
+  padding-right: rem(28px);
+  padding-top: rem(48px);
   position: fixed;
 
   header {
     max-width: 68%;
-    margin-top: rem(48px);
+    //margin-top: rem(48px);
   }
 
   .menu-link-container {
     display: flex;
     flex-direction: column;
-    margin-top: rem(98px);
+    margin-top: rem(85px);
 
     a {
-      margin-bottom: rem(23px);
+      margin-bottom: rem(13px);
     }
   }
-
 }
 
 .main-container {
   //max-width: 618px;
-  max-width: 48vw;
+  max-width: 51vw;
   margin-left: 9%;
   margin-top: rem(45px);
-  margin-bottom: rem(204px);
+  margin-bottom: rem(39px);
 
   .final-section-marker {
-    width: rem(14px);
-    height: rem(14px);
-    background: $color-carmine-red;
-    margin-top: rem(8px);
+    width: rem(11px);
+    height: rem(11px);
+    background: $color-green-pine-base;
+    opacity: 0.8;
+    margin-top: rem(6px);
     border-radius: rem(1px);
   }
+
+  footer {
+    min-height: rem(48px);
+    margin-top: rem(164px);
+    padding: rem(9px) rem(15px);
+    background: rgba(243,246,253,0.6);
+    //background: $color-gunmetal-blue-tint-3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
 
 /* Social Icons ---------*/
 
@@ -86,14 +106,14 @@ body {
   justify-content: flex-end;
   margin-top: rem(40px);
   position: relative;
-  right: rem(68px);
+  right: rem(59px);
 
   &__github, 
   &__twitter, 
   &__linkedin {
     width: rem(22px);
     height: rem(22px);
-    margin-right: rem(28px);
+    margin-right: rem(27px);
   }
 
   &__linkedin {
@@ -124,12 +144,16 @@ body {
   }
 }
 
+.nav-link {
+  @extend %typography-menu-link;
+}
+
 .main-section {
   h2 {
     margin-top: rem(61px);
   }
 
-  p:first-of-type, ul {   // the first paragraph of every section has a larger padding 
+  p:first-of-type, ul {    // the first paragraph of every section has a larger padding 
     margin-top: rem(17px);
   }
 
@@ -138,10 +162,10 @@ body {
   }
 
   .highlight-text {
-    background: $color-gunmetal-blue-tint-3;
-    color: $color-eerie-black-tint-1;
+    background: rgba(243,246,253,0.2);  //$color-gunmetal-blue-tint-3;
+    color: $color-green-pine-shade-2;
     line-height: $line-height-small;  // initial code tag line-height was larger and was creating a gap into the paragraph  
-    padding: rem(5px) rem(7px);
+    padding: rem(4px) rem(8px);
     margin: 0 3px;
     border-radius: 3px;
     border: 1px solid $color-gunmetal-blue-tint-2;
@@ -171,12 +195,19 @@ h2 {
 
 h3 {
   @extend %typography-h3-subtitle;
-  margin-top: rem(47px);
+  margin-top: rem(37px);
 }
 
-.nav-link {
-  @extend %typography-menu-link;
+// Styling for the line that comes before each h3 element
+
+h3::before {
+  content: url(assets/icons/decorative-line-before-h3-element.svg);
+  display: inline-block;
+  text-indent: rem(-44px);
+  transform: translateY(-6px);
 }
+
+//--------------------------------//
 
 
 .main-section {
@@ -191,5 +222,18 @@ h3 {
 
   code {
     @extend %typography-code-snippets;
+  }
+}
+
+footer {
+  small {    // Footer text styling goes here, inside the small element
+    @extend %typography-small-text;
+    margin-top: rem(6px);
+    line-height: 21px;    // Line height was too small, paragraph was getting cut at the top  }
+  }
+
+  a {
+    display: inline-block;
+    color: $color-green-pine-shade-2;
   }
 }

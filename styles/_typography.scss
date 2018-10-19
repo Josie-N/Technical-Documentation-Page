@@ -8,8 +8,9 @@ $font-stack-code: 'Roboto-Mono-Medium', 'Courier New', Courier, monospace;
 
 /* Font Sizes ------- */
 
-$font-size-small        : 12px;
+$font-size-small        : 12.2px;
 $font-size-medium       : 14px;
+$font-size-minor        : 16px;
 $font-size-base         : 18px;
 $font-size-large        : 23px;
 $font-size-extra-large  : 27px;
@@ -40,7 +41,8 @@ $line-height-display      : 62px;
   font-size:     $font-size-extra-large;
   line-height: $line-height-extra-large;
   color:        $color-eerie-black-base;
-  letter-spacing: 0.2px;
+  letter-spacing:     0.2px;
+  word-spacing:    rem(2px);
 }
 
 %typography-h3-subtitle {
@@ -67,11 +69,10 @@ $line-height-display      : 62px;
 
 %typography-menu-link {
   font-family:      $font-stack-body;
-  font-size:         $font-size-base; 
+  font-size:        $font-size-minor; 
   line-height:     $line-height-base;
   color: $color-gunmetal-blue-tint-1;
   text-decoration: none;
-  letter-spacing: 0.3px;
 }
 
 %typography-list-items {
@@ -94,5 +95,6 @@ $line-height-display      : 62px;
   font-family:         $font-stack-body;
   font-size:           $font-size-small; 
   line-height:       $line-height-small;
-  color:   $color-gunmetal-blue-shade-1;
+  color:        $color-eerie-black-base;
+  ;
 }
