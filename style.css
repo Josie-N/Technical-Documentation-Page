@@ -19,7 +19,8 @@ h2 {
   font-size: 27px;
   line-height: 41px;
   color: #1C1D1E;
-  letter-spacing: 0.2px; }
+  letter-spacing: 0.2px;
+  word-spacing: rem(2px); }
 
 h3 {
   font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
@@ -35,11 +36,10 @@ h3 {
 
 .nav-link {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   color: #D2D9E9;
-  text-decoration: none;
-  letter-spacing: 0.3px; }
+  text-decoration: none; }
 
 .main-section li {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
@@ -86,7 +86,8 @@ h2 {
   font-size: 27px;
   line-height: 41px;
   color: #1C1D1E;
-  letter-spacing: 0.2px; }
+  letter-spacing: 0.2px;
+  word-spacing: 0.111rem; }
 
 h3 {
   font-family: "Neufile-Grotesk-Medium", Times, ‘Times New Roman’, serif;
@@ -102,11 +103,10 @@ h3 {
 
 .nav-link {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   color: #D2D9E9;
-  text-decoration: none;
-  letter-spacing: 0.3px; }
+  text-decoration: none; }
 
 .main-section li {
   font-family: "Proxima-Sans-Regular", "Calibri", Trebuchet, sans-serif;
@@ -155,7 +155,7 @@ body {
   padding-left: 0.222rem; }
 
 .nav-container {
-  width: 27.6vw;
+  width: 24.9vw;
   background: #2F3546;
   display: flex;
   justify-content: flex-end; }
@@ -164,20 +164,20 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 8.6vw;
-  padding-right: 2.556rem;
+  padding-right: 1.556rem;
+  padding-top: 2.667rem;
   position: fixed; }
   .nav-inner-container header {
-    max-width: 68%;
-    margin-top: 2.667rem; }
+    max-width: 68%; }
   .nav-inner-container .menu-link-container {
     display: flex;
     flex-direction: column;
-    margin-top: 5.444rem; }
+    margin-top: 4.722rem; }
     .nav-inner-container .menu-link-container a {
-      margin-bottom: 1.278rem; }
+      margin-bottom: 0.722rem; }
 
 .main-container {
-  max-width: 48vw;
+  max-width: 51vw;
   margin-left: 9%;
   margin-top: 2.5rem;
   margin-bottom: 11.333rem; }
@@ -194,11 +194,11 @@ body {
   justify-content: flex-end;
   margin-top: 2.222rem;
   position: relative;
-  right: 3.778rem; }
+  right: 3.278rem; }
   .social-icons__github, .social-icons__twitter, .social-icons__linkedin {
     width: 1.222rem;
     height: 1.222rem;
-    margin-right: 1.556rem; }
+    margin-right: 1.5rem; }
   .social-icons__linkedin {
     position: relative;
     top: 0.111rem; }
@@ -221,10 +221,10 @@ body {
 .main-section p {
   margin-top: 1.222rem; }
 .main-section .highlight-text {
-  background: #F3F6FD;
-  color: #2B2C31;
+  background: rgba(243, 246, 253, 0.2);
+  color: #1b8072;
   line-height: 18px;
-  padding: 0.278rem 0.389rem;
+  padding: 0.222rem 0.444rem;
   margin: 0 3px;
   border-radius: 3px;
   border: 1px solid #E9EEFC; }

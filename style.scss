@@ -32,7 +32,8 @@ body {
 
 .nav-container {
   //min-width: 252px;
-  width: 27.6vw;
+  width: 24.9vw;
+  //width: 27.6vw;
   background: $color-gunmetal-blue-base;
   display: flex;
   justify-content: flex-end;
@@ -42,21 +43,22 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 8.6vw;
-  padding-right: rem(46px);
+  padding-right: rem(28px);
+  padding-top: rem(48px);
   position: fixed;
 
   header {
     max-width: 68%;
-    margin-top: rem(48px);
+    //margin-top: rem(48px);
   }
 
   .menu-link-container {
     display: flex;
     flex-direction: column;
-    margin-top: rem(98px);
-
+    margin-top: rem(85px);
+    
     a {
-      margin-bottom: rem(23px);
+      margin-bottom: rem(13px);
     }
   }
 
@@ -64,7 +66,7 @@ body {
 
 .main-container {
   //max-width: 618px;
-  max-width: 48vw;
+  max-width: 51vw;
   margin-left: 9%;
   margin-top: rem(45px);
   margin-bottom: rem(204px);
@@ -86,14 +88,14 @@ body {
   justify-content: flex-end;
   margin-top: rem(40px);
   position: relative;
-  right: rem(68px);
+  right: rem(59px);
 
   &__github, 
   &__twitter, 
   &__linkedin {
     width: rem(22px);
     height: rem(22px);
-    margin-right: rem(28px);
+    margin-right: rem(27px);
   }
 
   &__linkedin {
@@ -138,10 +140,12 @@ body {
   }
 
   .highlight-text {
-    background: $color-gunmetal-blue-tint-3;
-    color: $color-eerie-black-tint-1;
+    //background-color: $color-gunmetal-blue-tint-3;
+    background: rgba(243,246,253,0.2);
+    //opacity: 0.2;
+    color: $color-green-pine-shade-2;
     line-height: $line-height-small;  // initial code tag line-height was larger and was creating a gap into the paragraph  
-    padding: rem(5px) rem(7px);
+    padding: rem(4px) rem(8px);
     margin: 0 3px;
     border-radius: 3px;
     border: 1px solid $color-gunmetal-blue-tint-2;
