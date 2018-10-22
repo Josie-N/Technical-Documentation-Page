@@ -37,7 +37,6 @@ body {
 }
 
 .nav-container {
-  //min-width: 252px;
   width: 24.9vw;
   background: $color-gunmetal-blue-base;
   display: flex;
@@ -54,7 +53,6 @@ body {
 
   header {
     max-width: 68%;
-    //margin-top: rem(48px);
   }
 
   .menu-link-container {
@@ -69,7 +67,6 @@ body {
 }
 
 .main-container {
-  //max-width: 618px;
   max-width: 51vw;
   margin-left: 9%;
   margin-top: rem(45px);
@@ -88,8 +85,7 @@ body {
     min-height: rem(48px);
     margin-top: rem(164px);
     padding: rem(9px) rem(15px);
-    background: rgba(243,246,253,0.6);
-    //background: $color-gunmetal-blue-tint-3;
+    background: rgba(243,246,253,0.6);  //$color-gunmetal-blue-tint-3
 
     display: flex;
     justify-content: center;
@@ -100,7 +96,6 @@ body {
 
 /* Social Icons ---------*/
 
-
 .social-icons {
   display: flex;
   justify-content: flex-end;
@@ -108,12 +103,25 @@ body {
   position: relative;
   right: rem(59px);
 
+  img:hover {
+    filter: contrast(220%);
+    @extend %link-transition-style;
+  }
+
+  img:active {
+    filter: sepia(160%);
+  }
+
   &__github, 
   &__twitter, 
   &__linkedin {
     width: rem(22px);
     height: rem(22px);
     margin-right: rem(27px);
+
+    &:hover {
+      fill: green;
+    }
   }
 
   &__linkedin {
@@ -146,6 +154,15 @@ body {
 
 .nav-link {
   @extend %typography-menu-link;
+
+  &:hover {
+    color: $color-white-plain;
+    @extend %link-transition-style;
+  }
+
+  &:active {
+    color: $color-green-pine-base;
+  }
 }
 
 .main-section {
@@ -207,7 +224,7 @@ h3::before {
   transform: translateY(-6px);
 }
 
-//--------------------------------//
+//---------------------//
 
 
 .main-section {
@@ -216,8 +233,14 @@ h3::before {
   }
 
   li {
-    display: list-item;
     @extend %typography-list-items;
+  }
+
+  li:before {
+    content: " • ";
+    position: relative;
+    right: rem(13px);
+    color: $color-carmine-red;
   }
 
   code {
@@ -229,11 +252,20 @@ footer {
   small {    // Footer text styling goes here, inside the small element
     @extend %typography-small-text;
     margin-top: rem(6px);
-    line-height: 21px;    // Line height was too small, paragraph was getting cut at the top  }
+    line-height: 21px;    // Line height was too small, paragraph was getting cut at the top
   }
 
   a {
     display: inline-block;
     color: $color-green-pine-shade-2;
+
+    &:hover {
+      color: $color-green-pine-base;
+      @extend %link-transition-style;
+    }
+
+    &:active {
+      color: $color-eerie-black-base;
+    }
   }
 }

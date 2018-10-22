@@ -2,9 +2,6 @@
 /* Color Palette ------
 -------------------- */
 
-
-/* Layout Colors ------- */
-
 //
 // base = 'color_name'-base
 //
@@ -15,12 +12,15 @@
 // shade-2  =  base color is two levels darker
 //
 
+/* Layout Colors ------------ */
+
 $color-gunmetal-blue-shade-1: #292E3D;
 $color-gunmetal-blue-base:    #2F3546;
 $color-gunmetal-blue-tint-1:  #D2D9E9;
 $color-gunmetal-blue-tint-2:  #E9EEFC;
 $color-gunmetal-blue-tint-3:  #F3F6FD;
 $color-gunmetal-blue-tint-extra:  #545967;
+$color-white-plain:           #ffffff;
 
 
 /* Typography Colors ------- */

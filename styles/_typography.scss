@@ -98,3 +98,9 @@ $line-height-display      : 62px;
   color:        $color-eerie-black-base;
   ;
 }
+
+/* Link Transtion Style ------- */
+
+%link-transition-style {
+  transition: all 0.4s;
+}
