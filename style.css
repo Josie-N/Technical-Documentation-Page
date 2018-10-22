@@ -183,6 +183,9 @@ body {
   background: #2F3546;
   display: flex;
   justify-content: flex-end; }
+  @media (max-width: 1000px) {
+    .nav-container {
+      display: none; } }
 
 .nav-inner-container {
   display: flex;
@@ -205,6 +208,10 @@ body {
   margin-left: 9%;
   margin-top: 2.5rem;
   margin-bottom: 2.167rem; }
+  @media (max-width: 1000px) {
+    .main-container {
+      max-width: 68vw;
+      margin: 0 auto 2.167rem auto; } }
   .main-container .final-section-marker {
     width: 0.611rem;
     height: 0.611rem;
@@ -220,14 +227,40 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media (max-width: 1000px) {
+      .main-container footer {
+        margin-top: 6rem; } }
 
 /* Social Icons ---------*/
+@media (max-width: 1400px) {
+  .social-icons-tablet {
+    display: none; } }
+@media (max-width: 1000px) {
+  .social-icons-tablet {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.222rem;
+    transform: scale(0.9); }
+    .social-icons-tablet img:hover {
+      filter: contrast(220%); }
+    .social-icons-tablet img:active {
+      filter: sepia(160%); }
+    .social-icons-tablet__linkedin {
+      position: relative;
+      top: 0.111rem; }
+    .social-icons-tablet__twitter {
+      position: relative;
+      top: 0.222rem; } }
+
 .social-icons {
   display: flex;
   justify-content: flex-end;
   margin-top: 2.222rem;
   position: relative;
   right: 3.278rem; }
+  @media (max-width: 1000px) {
+    .social-icons {
+      display: none; } }
   .social-icons img:hover {
     filter: contrast(220%); }
   .social-icons img:active {
@@ -236,8 +269,6 @@ body {
     width: 1.222rem;
     height: 1.222rem;
     margin-right: 1.5rem; }
-    .social-icons__github:hover, .social-icons__twitter:hover, .social-icons__linkedin:hover {
-      fill: green; }
   .social-icons__linkedin {
     position: relative;
     top: 0.111rem; }

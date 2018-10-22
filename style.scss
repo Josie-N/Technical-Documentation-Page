@@ -41,6 +41,10 @@ body {
   background: $color-gunmetal-blue-base;
   display: flex;
   justify-content: flex-end;
+
+  @include breakpoint(md) { 
+    display: none;
+  }
 }
 
 .nav-inner-container {
@@ -72,6 +76,11 @@ body {
   margin-top: rem(45px);
   margin-bottom: rem(39px);
 
+  @include breakpoint(md) {
+    max-width: 68vw; 
+    margin: 0 auto rem(39px) auto;
+  }
+
   .final-section-marker {
     width: rem(11px);
     height: rem(11px);
@@ -90,11 +99,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include breakpoint(md) {
+      margin-top: 6rem;
+    }
   }
 }
 
 
 /* Social Icons ---------*/
+
+.social-icons-tablet {
+  @include breakpoint(lg) { 
+    display: none;
+  }
+  
+  @include breakpoint(md) { 
+    display: flex;
+    justify-content: flex-end;
+    margin-top: rem(40px);
+    transform: scale(0.9);
+
+    img:hover {
+      filter: contrast(220%);
+    }
+  
+    img:active {
+      filter: sepia(160%);
+    }
+    
+    &__linkedin {
+      position: relative;
+      top: rem(2px);
+    }
+  
+    &__twitter {
+      position: relative;
+      top: rem(4px);
+    }
+  }
+}
 
 .social-icons {
   display: flex;
@@ -102,6 +146,10 @@ body {
   margin-top: rem(40px);
   position: relative;
   right: rem(59px);
+
+  @include breakpoint(md) { 
+    display: none;
+  }
 
   img:hover {
     filter: contrast(220%);
@@ -118,10 +166,6 @@ body {
     width: rem(22px);
     height: rem(22px);
     margin-right: rem(27px);
-
-    &:hover {
-      fill: green;
-    }
   }
 
   &__linkedin {
