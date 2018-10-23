@@ -38,6 +38,8 @@ Here is my second FreeCodeCamp challenge, part of the **Responsive Web Design Ce
 
 -------------
 
-- [ ] **User Story 14:** On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+- [x] **User Story 14:** On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
 
-- [ ] **User Story 15:** My Technical Documentation page should use at least one media query.
+- [x] **User Story 15:** My Technical Documentation page should use at least one media query.
+
+And that's a wrap. 🎉 🎊
