@@ -128,6 +128,12 @@ body {
       filter: sepia(160%);
     }
     
+    &__github, 
+    &__twitter, 
+    &__linkedin {
+      margin-right: rem(30px);
+    }
+
     &__linkedin {
       position: relative;
       top: rem(2px);
@@ -136,6 +142,7 @@ body {
     &__twitter {
       position: relative;
       top: rem(4px);
+      margin-right: 0;
     }
   }
 }
@@ -239,6 +246,8 @@ body {
     overflow: hidden;
     margin-top: 26px;
     margin-bottom: 40px;
+
+    word-spacing: 0.6px;
 
     .code-snippet-margin {
       margin-top: rem(21px);

@@ -5,6 +5,8 @@
 		<title>Sass Basics - Technical Documentation</title>
 		<link rel="stylesheet" type="text/css" href="styles/reset.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="./assets/syntax-highlighter/prism.css">
+		<script src="./assets/syntax-highlighter/prism.js"></script>
 	</head>
 		<body class="body-container">
 			<nav class="nav-container" id="navbar">
@@ -27,17 +29,17 @@
 				</nav>
 			<main class="main-container" id="main-doc">
 				<div class="social-icons-tablet">
-					<div class="social-icons__github">
+					<div class="social-icons-tablet__github">
 						<a href="https://github.com/Josie-N" target="_blank" rel="noopener">
 							<img src="assets/icons/github-logo.svg" alt="Github Icon">
 						</a>
 					</div>
-					<div class="social-icons__linkedin">
+					<div class="social-icons-tablet__linkedin">
 						<a href="https://www.linkedin.com/in/josie-nagy-8057a894/" target="_blank" rel="noopener">
 							<img src="assets/icons/linkedin-logo.svg" alt="LinkedIn Icon">		
 						</a>
 					</div>
-					<div class="social-icons__twitter">
+					<div class="social-icons-tablet__twitter">
 						<a href="https://twitter.com/iozefina_nagy" target="_blank" rel="noopener">
 							<img src="assets/icons/twitter-logo.svg" alt="Twitter Icon">		
 						</a>
@@ -82,14 +84,15 @@
 							your stylesheet. You can store things like colors, font stacks, or any CSS value you 
 							think you'll want to reuse. Sass uses the  <code class="highlight-text">$</code> symbol 
 							to make something a variable. Here's an example:</p>						
-						<pre><code>$font-stack: Helvetica, sans-serif;
+						<pre><code class="language-css">$font-stack: Helvetica, sans-serif;
 $primary-color: #333;
-<div class="code-snippet-margin">body {
+
+body {
   font: 100% $font-stack;
   color: $primary-color;
-}</div></code></pre>
+}</code></pre>
 						<p>When the Sass is processed, it takes the variables we define for the <code class="highlight-text">$font-stack</code> and <code class="highlight-text">$primary-color</code> and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.</p>
-<pre><code>body {
+<pre><code class="language-css">body {
   font: 100% Helvetica, sans-serif;
   color: #333;
 }</code></pre>
@@ -107,7 +110,7 @@ $primary-color: #333;
 							bad practice.</p>
 						<p>With that in mind, here's an example of some typical styles 
 							for a site's navigation:</p>
-<pre><code>nav {
+<pre><code class="language-css">nav {
   ul {
     margin: 0;
     padding: 0;
@@ -115,11 +118,13 @@ $primary-color: #333;
   }
 <div class="code-snippet-margin">  li { 
     display: inline-block; 
-  }</div><div class="code-snippet-margin">  a {
+  }</div><div class="code-snippet-margin">  
+  a {
     display: block;
     padding: 6px 12px;
     text-decoration: none;
-  }</div>}</code></pre>
+  }</div>
+}</code></pre>
 						<p>Select the code in the pad and hit <code class="highlight-text">Ctrl + R</code> to watch it unfold 
 							in your browser!</p>
 					</section>
@@ -143,7 +148,7 @@ $primary-color: #333;
 							with CSS3 and the many vendor prefixes that exist. A mixin 
 							lets you make groups of CSS declarations that you want to 
 							reuse throughout your site.</p>
-<pre><code>@mixin transform($property) {
+<pre><code class="language-css">@mixin transform($property) {
   -webkit-transform: $property;
       -ms-transform: $property;
           transform: $property;
