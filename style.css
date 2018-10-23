@@ -245,12 +245,15 @@ body {
       filter: contrast(220%); }
     .social-icons-tablet img:active {
       filter: sepia(160%); }
+    .social-icons-tablet__github, .social-icons-tablet__twitter, .social-icons-tablet__linkedin {
+      margin-right: 1.667rem; }
     .social-icons-tablet__linkedin {
       position: relative;
       top: 0.111rem; }
     .social-icons-tablet__twitter {
       position: relative;
-      top: 0.222rem; } }
+      top: 0.222rem;
+      margin-right: 0; } }
 
 .social-icons {
   display: flex;
@@ -309,7 +312,8 @@ body {
   border-radius: 0.444rem;
   overflow: hidden;
   margin-top: 26px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  word-spacing: 0.6px; }
   .main-section pre .code-snippet-margin {
     margin-top: 1.167rem; }
 
